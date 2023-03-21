@@ -1,10 +1,11 @@
 export class Toode {
     constructor(
-        public id: number,
-        public name: string,
+        private _id: number,
+        private _name: string,
         public price: number,
         public isActive: boolean
     ) {}
+
     get id() {
         return this._id;
     }
@@ -18,3 +19,4 @@ export class Toode {
     }
 }
 
+export default Toode
